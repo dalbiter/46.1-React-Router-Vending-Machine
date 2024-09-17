@@ -1,7 +1,6 @@
 .Navbar {
     background-color: darkslateblue;
-    padding: 1rem;
-    position: fixed;
+    padding: 1rem;  
 }
 
 .Navbar a {

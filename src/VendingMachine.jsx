@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Link } from 'react-router-dom';
+import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
+import Chips from './Chips';
+import Soda from './Soda';
+import Sardines from './Sardines';
 
 const VendingMachine = () => {
     return (
@@ -10,6 +13,11 @@ const VendingMachine = () => {
                     <Link to="/soda">Soda</Link>
                     <Link to="/sardines">Sardines</Link>
                 </nav>
+                <Routes>
+                    <Route exact path='/chips' element={<Chips />} />
+                    <Route exact path='/soda' element={<Soda />} />
+                    <Route exact path='/sardines' element={<Sardines />} />
+                </Routes>
             </BrowserRouter>
             
         </div>
